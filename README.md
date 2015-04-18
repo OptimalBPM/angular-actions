@@ -1,7 +1,7 @@
 # Angular-actions
-Angular Actions define a framework for spreading information within and between clients
+Angular Actions define a framework for spreading information. first within and then between, clients.
 
-The functionality is meant to be an expanded "webbified" variant of the [Delphi TActionList](http://docwiki.embarcadero.com/Libraries/XE7/en/FMX.ActnList.TActionList) concept.
+The functionality is meant to be an expanded "webbified" variant of the [Embarcadero Delphi TActionList](http://docwiki.embarcadero.com/Libraries/XE7/en/FMX.ActnList.TActionList) concept.
 
 An action list is meant to centralize the responses to user actions. 
 Action lists components maintain a list of actions that can be monitored by components in applications. 
