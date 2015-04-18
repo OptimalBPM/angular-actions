@@ -58,6 +58,12 @@ To post an event would then be simple:
     angularAction.post("item/1/create", data, global)
 Where the scope would be set to global if one wanted to notify outside the local application(if the server implementation allows it).
 
+# Caching
+It should be possible to integrate this with a cache mechanism like [angular cache](https://github.com/jmdobry/angular-cache), so that caches are invalidated based on incoming actions events. If for example a component like angular-schema-form-dynamic-select uses angular-cache to cache list items, the cache key could be constructed to match the name of the relevant action, using an expression in a property. 
+Angular-action could then be tasked to loop the cache key store for keys matching the event.
+
+For example, a key called "item/1" should be invalidated if an item/1/create | remove | update | delete - action is received. So when the dynamic-select displays the list items, it gets a cache miss, reloads the data from the server and caches that instead. 
+
 
 # Security
 Within a application, there are no real security issues, but if it was to be a system-wide implementation, these things would have to be considered:
