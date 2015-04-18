@@ -42,7 +42,7 @@ And to select what actions to listen for, a component may then register using an
 * item	- Listen to all actions for all item
 * item/1/* -	Listen to all actions for the item with id = 1
 * item/1/update	 - Monitor the item with id = 1 for change
-* user/*/login | user/*/logout - Monitor user login/logout activity
+* user/\*/login | user/\*/logout - Monitor user login/logout activity
 
 ## Event structure
 This should be kept simple:
