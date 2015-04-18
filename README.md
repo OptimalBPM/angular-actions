@@ -1,5 +1,5 @@
 # Angular-actions
-Angular Actions define a framework for spreading information. first within and then between, clients.
+Angular Actions define a simplistic framework for spreading information. first within and then between, clients.
 
 The functionality is meant to be an expanded "webbified" variant of the [Embarcadero Delphi TActionList](http://docwiki.embarcadero.com/Libraries/XE7/en/FMX.ActnList.TActionList) concept.
 
